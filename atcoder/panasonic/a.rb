@@ -1,6 +1,4 @@
-stations = gets.chomp.chars
-if stations.uniq.length == 1
-  puts 'No'
-else
-  puts 'Yes'
-end
+k = gets.chomp.to_i
+array = [1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1, 5, 1, 2, 1, 14, 1, 5, 1, 5, 2, 2, 1, 15, 2, 2, 5, 4, 1, 4, 1, 51]
+
+puts array[k-1]

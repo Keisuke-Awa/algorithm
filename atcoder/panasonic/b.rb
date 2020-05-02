@@ -1,16 +1,8 @@
-nums = gets.split.map(&:to_i) 
-array = []
-n = nums[0]
-b = nums[1]
-r = nums[2]
-length = b + r
+nums = gets.split.map(&:to_i)
+tiles = nums[0]*nums[1]
 
-sho = n / length
-amari = n % length
-if amari == 0
-  puts (b * sho)
-elsif amari >= b
-  puts (b * sho) + b
+if tiles.even?
+  puts tiles/2
 else
-  puts (b * sho) + amari
+  puts (nums[0]*(nums[1]-1) + (nums[0] + 1)) /2
 end
