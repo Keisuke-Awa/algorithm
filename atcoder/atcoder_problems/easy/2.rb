@@ -5,8 +5,11 @@ people = gets.split.map(&:to_i)
 
 res = []
 (people.min..people.max).each do |i|
-  # puts i
-  sum = people.inject { |result, person| result + (person - i)**2 }
+  sum = 0
+  people.each do |person|
+    kyori = person - i
+    sum = sum + kyori**2
+  end
   res << sum
 end
 
