@@ -12,3 +12,6 @@ atcoder-rust/**/*.rs.bk
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 atcoder-rust/*.pdb
+
+.DS_store
+/atcoder/.DS_store
